@@ -1,10 +1,10 @@
-import utils.Matrix;
+import utils.TextProcessor;
 
 public class Main {
     public static void main(String[] args) {
 
-        Matrix matrix = new Matrix(4);
+        TextProcessor text = new TextProcessor("input.txt");
 
-        matrix.identityRotated().print();
+        text.processCommands();
     }
 }
