@@ -20,7 +20,7 @@ public class MyMatrix {
         System.out.println(sb);
     }
 
-    public void identityRotated() {
+    public MyMatrix identityRotated() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (i == (size - j - 1)) {
@@ -30,5 +30,6 @@ public class MyMatrix {
                 }
             }
         }
+        return this;
     }
 }

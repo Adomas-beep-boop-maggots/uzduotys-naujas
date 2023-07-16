@@ -5,8 +5,6 @@ public class Main {
 
         MyMatrix matrix = new MyMatrix(4);
 
-        matrix.identityRotated();
-
-        matrix.printAsInts();
+        matrix.identityRotated().printAsInts();
     }
 }
