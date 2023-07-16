@@ -1,10 +1,10 @@
-import ade.MyMatrix;
+import utils.Matrix;
 
 public class Main {
     public static void main(String[] args) {
 
-        MyMatrix matrix = new MyMatrix(4);
+        Matrix matrix = new Matrix(4);
 
-        matrix.identityRotated().printAsInts();
+        matrix.identityRotated().print();
     }
 }

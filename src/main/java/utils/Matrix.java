@@ -1,32 +1,32 @@
-package ade;
+package utils;
 
-public class MyMatrix {
+public class Matrix {
     private int size;
-    private float[][] matrix;
+    private int[][] matrix;
 
-    public MyMatrix(int size) {
+    public Matrix(int size) {
         this.size = size;
-        this.matrix = new float[size][size];
+        this.matrix = new int[size][size];
     }
 
-    public void printAsInts() {
+    public void print() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                sb.append((int) matrix[i][j]).append(" ");
+                sb.append(matrix[i][j]).append(" ");
             }
             sb.append("\n");
         }
         System.out.println(sb);
     }
 
-    public MyMatrix identityRotated() {
+    public Matrix identityRotated() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (i == (size - j - 1)) {
-                    matrix[i][j] = 1.0f;
+                    matrix[i][j] = 1;
                 } else {
-                    matrix[i][j] = 0.0f;
+                    matrix[i][j] = 0;
                 }
             }
         }
